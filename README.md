@@ -27,23 +27,6 @@ streamlit run app/streamlit_app.py
 To populate or refresh the database manually:
 python scripts/run_all.py
 
-## Environment Variables
-
-This project requires environment variables to run.
-
-1. Copy `.env.example` to `.env`
-2. Fill in the required values
-3. Never commit `.env` to version control
-
-## Architecture Overview
-
-- Data source: Yahoo Finance
-- ETL pipeline: Python
-- Database: PostgreSQL
-- Backend: SQLAlchemy
-- Frontend: Streamlit
-- Deployment: Docker Compose
-
 #=========================================================================
 
 📊 Stock Market Dashboard
@@ -87,6 +70,33 @@ src/        Core business logic
 scripts/    Data ingestion entry points
 config/     Ticker configuration
 logs/       Application logs
+
+#=========================================================================
+
+🚀 Running the App (Local)
+
+1. Create virtual environment
+
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+2. Install dependencies
+
+pip install -r requirements.txt
+
+3. Set environment variables
+
+Create .env:
+
+POSTGRES_HOST=localhost
+POSTGRES_DB=stock_data
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=admin
+OPENAI_API_KEY=your_key_here
+
+4. Run Streamlit
+
+python -m streamlit run app/streamlit_app.py
 
 #=========================================================================
 
