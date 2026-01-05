@@ -126,5 +126,5 @@ Not financial advice
 
 📄 License
 
-[----]
+[MIT License]
 
