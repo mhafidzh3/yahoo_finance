@@ -1,0 +1,7 @@
+# Data visualization
+matplotlib
+plotly
+
+# Optional / dev
+jupyterlab
+ipython

@@ -1,0 +1,19 @@
+# Core
+pandas
+numpy
+sqlalchemy
+psycopg2-binary
+
+# Config & Environment
+python-dotenv
+pyyaml
+
+# Data source
+yfinance
+
+# Web app
+streamlit
+
+# OpenAI (Optional but supported)
+openai
+

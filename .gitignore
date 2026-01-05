@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+stock_pipeline.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# SQL scratch / local experiments
+sql/dev/
+
+# DB dumps (optional)
+*.dump
+*.bak
+
+# Docker volume
+postgres_data/
+
